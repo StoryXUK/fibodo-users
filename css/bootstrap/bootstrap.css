@@ -3662,11 +3662,12 @@ textarea.form-control-lg {
 }
 
 .dropdown-item {
+  font-size: 14px;
   display: block;
   width: 100%;
-  padding: 0.25rem 1rem;
+  padding: 0.25rem 2.5rem;
   clear: both;
-  font-weight: 400;
+  font-weight: 200;
   color: #212529;
   text-align: inherit;
   text-decoration: none;

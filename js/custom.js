@@ -1,6 +1,6 @@
 /*
 
-Template: Mavix - Business Marketing HTML5 Template
+Template: Fibodo
 Author: potenzaglobalsolutions
 Design and Developed by: potenzaglobalsolutions.com
 
