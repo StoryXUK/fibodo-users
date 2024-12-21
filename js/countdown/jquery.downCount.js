@@ -16,7 +16,7 @@
             $.error('Date is not defined.');
         }
 
-        // Throw error if date is set incorectly
+        // Throw error if date is set incorrectly
         if (!Date.parse(settings.date)) {
             $.error('Incorrect date format, it should look like this, 12/24/2012 12:00:00.');
         }
@@ -36,7 +36,7 @@
             var utc = date.getTime() + (date.getTimezoneOffset() * 60000);
 
             // set new Date object
-            var new_date = new Date(utc + (3600000*settings.offset))    
+            var new_date = new Date(utc + (3600000 * settings.offset))    
             return new_date;
         };
 
@@ -50,7 +50,7 @@
             // difference of dates
             var difference = target_date - current_date;
 
-            // if difference is negative than it's pass the target date
+            // if difference is negative than it's past the target date
             if (difference < 0) {
                 // stop timer
                 clearInterval(interval);
@@ -72,13 +72,13 @@
                 minutes = Math.floor((difference % _hour) / _minute),
                 seconds = Math.floor((difference % _minute) / _second);
 
-                // fix dates so that it will show two digets
-                days = (String(days).length >= 2) ? days : '0' + days;
-                hours = (String(hours).length >= 2) ? hours : '0' + hours;
-                minutes = (String(minutes).length >= 2) ? minutes : '0' + minutes;
-                seconds = (String(seconds).length >= 2) ? seconds : '0' + seconds;
+            // fix dates so that it will show two digits
+            days = (String(days).length >= 2) ? days : '0' + days;
+            hours = (String(hours).length >= 2) ? hours : '0' + hours;
+            minutes = (String(minutes).length >= 2) ? minutes : '0' + minutes;
+            seconds = (String(seconds).length >= 2) ? seconds : '0' + seconds;
 
-            // based on the date change the refrence wording
+            // based on the date change the reference wording
             var ref_days = (days === 1) ? 'day' : 'days',
                 ref_hours = (hours === 1) ? 'hour' : 'hours',
                 ref_minutes = (minutes === 1) ? 'minute' : 'minutes',
@@ -101,3 +101,11 @@
     };
 
 })(jQuery);
+
+// Initialize the countdown
+$(document).ready(function () {
+    $('.countdown-container').downCount({
+        date: '02/10/2025 00:00:00', // Target date: February 10, 2025, midnight
+        offset: 0 // Set offset as needed (0 for UTC)
+    });
+});
