@@ -2194,10 +2194,10 @@ form.fullborder .form-control {
     background: #4b9ad6;
     border-radius: 50px; }
   .pgsel-history-slider-wrapper .history-item .history-info .history-year {
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 700;
     font-family: "Sora", sans-serif;
-    line-height: 70px;
+    line-height: 50px;
     margin-bottom: 0;
     color: #0d1615; }
 
@@ -2232,7 +2232,7 @@ form.fullborder .form-control {
     transition: all 0.25s ease-in-out; }
     .pgsel-history-slider-wrapper .history-style-02 .history-item .history-year {
       margin-bottom: 20px;
-      font-size: 90px;
+      font-size: 60px;
       font-weight: 700;
       line-height: 80px;
       -webkit-text-stroke-width: 1px;
