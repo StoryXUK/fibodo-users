@@ -5587,6 +5587,27 @@ header.header.header-sticky.is-sticky {
   .navbar .navbar-nav .dropdown-menu li.active > a span:before {
     width: 100%; }
 
+
+    .navbar .dropdown > .dropdown-menu li > p {
+      font-size: 12px;
+      line-height: 30px;
+      font-weight: 300;
+      padding: 5px 25px 5px 25px;
+      border-radius: 0px;
+      position: relative;
+      color: #000000;
+      font-family: "DM Sans", sans-serif; }
+      .navbar .dropdown > .dropdown-menu li > p:hover {
+        color: #4b9ad6;
+        padding-left: 35px; }
+        .navbar .dropdown > .dropdown-menu li > p:hover span:before {
+          width: 100%; }
+    
+    .navbar .navbar-nav .dropdown-menu li.active > p span {
+      color: #4b9ad6; }
+      .navbar .navbar-nav .dropdown-menu li.active > p span:before {
+        width: 100%; }
+    
 /* Search */
 .action-group {
   gap: 30px;
